@@ -1,5 +1,5 @@
 header{
-    background-color: rgb(145, 145, 145);
+    background-color: rgb(255, 255, 255);
     font-size: medium;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
    
@@ -10,4 +10,5 @@ footer{
 }
 body {
     text-align: center;
+    background-color: rgb(66, 117, 194)                        ;
 }
