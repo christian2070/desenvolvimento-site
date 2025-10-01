@@ -1,9 +1,10 @@
 header{
-    background-color: rgb(233, 5, 100);
+    background-color: rgb(145, 145, 145);
     font-size: medium;
-     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   
 }
 footer{
-    background-color: rgb(49, 70, 151);
+    background-color: rgb(145,145,145);
     font-size: medium;
 }
