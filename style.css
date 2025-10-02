@@ -12,3 +12,20 @@ body {
     text-align: center;
     background-color: rgb(130, 168, 224);                        ;
 }
+.container-principal{
+     /* Define a cor de fundo branco */
+    background-color: white; 
+    
+    /* Define a largura do container */
+    width: 40%; 
+    
+    /* Garante que o container não fique muito largo em telas grandes (opcional) */
+    max-width: 1000px; 
+    
+    /* Centraliza o container na tela: 0px de margem em cima/embaixo, 'auto' nas laterais */
+    margin: 0 auto; 
+    
+    /* Para deixar mais profissional, adicione um leve respiro em cima e embaixo */
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
