@@ -1,31 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&display=swap');
+
 header{
-    background-color: rgba(241, 255, 110, 1);
-    font-size: medium;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-   
+border: 20px rgb(204, 203, 203);
+padding: 1px;
+margin: 26px;
+background-color:rgb(255, 255, 255);
+font-family: Golos Text;
+justify-content: center;
+
+
 }
-footer{
-    background-color: rgb(145,145,145);
-    font-size: medium;
+nav{
+    margin-right: 45px;
+    display:inline-block;
+    background-color:rgb(255, 255, 255);
+    border-radius:15px;
+    color: black;
+    text-align:center;
 }
-body {
-    text-align: center;
-    background-color: rgb(130, 168, 224);                        ;
+nav a:hover{
+    background-color:rgb(158, 156, 156);
+    color:rgb(0, 0, 0);
+    text-decoration:none;
+    border-radius:15px;
+    padding:10px;
 }
-.container-principal{
-     /* Define a cor de fundo branco */
-    background-color: white; 
-    
-    /* Define a largura do container */
-    width: 40%; 
-    
-    /* Garante que o container não fique muito largo em telas grandes (opcional) */
-    max-width: 1000px; 
-    
-    /* Centraliza o container na tela: 0px de margem em cima/embaixo, 'auto' nas laterais */
-    margin: 0 auto; 
-    
-    /* Para deixar mais profissional, adicione um leve respiro em cima e embaixo */
-    padding-top: 20px;
-    padding-bottom: 20px;
+a{
+    color:black;
+    text-decoration:none;
+    padding:10px;
+}
+main{
+border:10px solid rgb(240, 60, 60);
+padding: 10px; 
+margin:10px; 
+border: 20px;
+padding: 50px;
+margin: 26px;
+background-color:rgb(109, 109, 109);
 }
