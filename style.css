@@ -1,12 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&display=swap');
-
+body{
+    margin: 0;
+    background-color: rgb(240, 240, 240);
+}
 header{
-   padding: 15px 0;
-    margin: 15px 5% 15px 5%;
-    font-family: Golos Text;
-    display: flex;
-    align-items: center; 
-    justify-content: space-between;  
+   
+   padding:5px;
+   
+   margin:0% 5% 0% 5%;
+
+   font-family: Golos Text;
+   display: flex;
+   align-items: center; 
+   justify-content: space-between;  
 }
 
 #logo_menu{
@@ -21,15 +27,16 @@ nav {
     align-items: center; 
 }
 
-nav a {
+nav > a {
    
     display: inline-block;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(240, 240, 240);
     border-radius: 25px;
     color: black;
     text-align: center;
     padding: 10px;
     text-decoration: none;
+    justify-content:space-evenly;
 }
  
 nav a:hover{
@@ -40,7 +47,6 @@ nav a:hover{
 }
 
 #trivago a{
-    
     
     background-color: rgb(0, 0, 0);
     border-radius: 25px;
@@ -55,40 +61,57 @@ nav a:hover{
     text-decoration:none;
     
 }
+#linha{
+    
+    border-top: 2px solid rgb(0, 0, 0);
+    
+    margin-top: 0px;
+    margin-left:5% ;
+    margin-right: 5%;
+    
+    
+    
+}
+
+#primeiro_paragrafo{
+    
+    
+    text-align: center;
+    font-family: Golos Text;
+
+}
 
 main{ 
+    
     border: 4px solid grey;
     border-radius:20px;
-    margin: 20px 5%;
+    
+    margin-left :5%;
+    margin-right:5%;
+    margin-top:0px;
+    margin-bottom:5%;
+
+    padding: 50px 10px; 
+
     background-color:rgb(255, 255, 255);
     border-color: rgb(90, 70, 70);
+   
     font-family: Golos Text;
     text-align:center;
-    padding: 50px 10px; 
+
     align-items: center;
     justify-content: center;
 }
-#linha{
-    border-top: 2px solid rgb(141, 135, 135);
-    margin-top: 0px;
-    
-}
-.precisa_de_ferias{
-    font-size:40px;
-    font-weight: bold;
-    text-align:center;
-    margin-top:50px;
-    font-family: Golos Text;
-}
+
+
 footer{
+   
+    padding:5px;
+       
     background-color:grey;
     text-align:center;
     font-family: Golos Text;
-     padding:5px;
-    
-    
-    
-    
+
 }
 
 
@@ -99,6 +122,7 @@ footer{
         text-align: center;
         flex-direction: column; 
         align-items: center; 
+        
         gap: 30px;
         margin: 0; 
         padding: 15px 10px;
@@ -107,7 +131,7 @@ footer{
     main {
         margin-left: auto;
         margin-right: auto;
-        width: 90%; /* ou outra largura para centralizar o bloco */
+        width: 90%; 
     }
 
     nav {
@@ -120,16 +144,20 @@ footer{
     
 
     #trivago {
+        
         width: 100%; 
         margin: auto; 
+       
         text-align: center; 
-        margin: 20px 0;
+        
         display:flex;
         justify-content:center;
     }
     
     #trivago a {
+        
         display: inline-block;
         margin: 0;
-            }
+           
+    }
 }
