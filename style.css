@@ -28,7 +28,7 @@ nav {
 }
 
 nav > a {
-    background-color: #ffffff;
+    
     border-radius: 20px;
     color: #222;
     text-align: center;
@@ -39,8 +39,8 @@ nav > a {
 }
 
 nav a:hover {
-    background-color: #9e9c9c;
-    color: #ffffff;
+    background-color:rgb(187, 183, 183);
+    color: #000000;
 }
 
 #trivago {
@@ -109,8 +109,8 @@ section {
     box-sizing: border-box;
 }
 
-.imagens_main {
-    border: 2px solid #000000;
+.pacotes_menu{
+    border: 2px;
     border-radius: 14px;
     width: 270px;
     min-height: 160px;
@@ -121,26 +121,28 @@ section {
     margin: 0;
     background: #ffffff;
     text-align: center;
-    padding: 22px 10px;
+    padding-bottom:3%;
     cursor: pointer;
     box-sizing: border-box;
     transition: box-shadow 0.2s, border-color 0.2s;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.13);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.404);
+    background-image:"imagens/Gemini_Generated_Image_f3jmaqf3jmaqf3jm.png" ;
 }
 
-.imagens_main:hover {
-    border-color: #888;
+.pacotes_menu:hover {
+    opacity:0.5;
     box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    /*background-color:rgb(187, 183, 183);*/
 }
 
-.imagens_main h1 {
+.pacotes_menu h1 {
     font-size: 1.2em;
     font-weight: 700;
     margin-bottom: 8px;
     color: #222;
 }
 
-.imagens_main p {
+.pacotes_menu p {
     font-size: 1em;
     margin: 4px 0;
     color: #444;
@@ -156,7 +158,18 @@ footer {
     margin-top: 32px;
     border-top: 1px solid #bbb;
 }
+.main_outras_paginas{
+    background-color:rgb(196, 197, 197);
+    padding-left: 50px;
+    padding-right:50px ;
+    text-align: center;
+    justify-content: center;
 
+}
+.imagens_main{
+    border-top-left-radius:14px;
+    border-top-right-radius:14px;
+}
 
 @media (max-width: 900px) {
     main {
@@ -176,15 +189,22 @@ footer {
 
 @media (max-width: 600px) {
     header {
-        flex-direction: column;
-        align-items: center;
+        flex-direction:column-reverse;
+        justify-content:space-between;
         padding: 12px 5px;
+
     }
+ 
     nav {
         width: 100%;
         justify-content: center;
         flex-wrap: wrap;
         gap: 8px;
+        flex: 1;
+        display: flex;
+        justify-content: flex-end;
+        gap: 18px;
+        align-items: center;
     }
     #trivago {
         width: 100%;
@@ -205,7 +225,7 @@ footer {
         padding: 8px 0;
         max-width: 100vw;
     }
-    .imagens_main {
+    .pacotes_menu {
         width: 92vw;
         min-width: unset;
         padding: 10px 5px;
