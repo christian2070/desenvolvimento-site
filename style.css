@@ -17,9 +17,9 @@ header {
     gap:0;
     flex-wrap: wrap;
     border-bottom: 1px solid #eee;
-    position: sticky; /* Define o comportamento "sticky" */
-    top: 0;           /* Fixa o elemento a 0px do topo da viewport */
-    z-index: 1000;      /* Garante que o header fique sobre outros elementos */
+    /*position: sticky; *
+    top: 0;          
+    z-index: 1000;     */
 }
 
 
@@ -73,8 +73,7 @@ nav > a:hover {
 
 
 main {
-    background-color: #5c5a5a91;
-    border: 2px solid #f7f4f491;
+    background-color: #ffffff;
     border-radius: 16px;
     margin: 24px auto;
     padding: 32px 32px;
@@ -94,7 +93,7 @@ main {
 
 .pacotes_menu{
     border: 2px;
-    border-radius: 14px;
+    border-radius: 16px;
     width: 270px;
     min-height: 160px;
     display: flex;
@@ -108,8 +107,8 @@ main {
     cursor: pointer;
     box-sizing: border-box;
     transition: box-shadow 0.2s, border-color 0.2s;
-    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.404);
-    background-image:"imagens/Gemini_Generated_Image_f3jmaqf3jmaqf3jm.png" ;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    
 }
 
 .pacotes_menu:hover {
@@ -129,6 +128,11 @@ main {
     margin: 4px 0;
     color: #444;
 }
+.imagens_main{
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+   
+}
 
 
 footer {
@@ -140,18 +144,7 @@ footer {
     margin-top: 32px;
     border-top: 1px solid #bbb;
 }
-.main_outras_paginas{
-    background-color:rgb(196, 197, 197);
-    padding-left: 50px;
-    padding-right:50px ;
-    text-align: center;
-    justify-content: center;
 
-}
-.imagens_main{
-    border-top-left-radius:14px;
-    border-top-right-radius:14px;
-}
 
 
 @media (max-width: 600px) {
@@ -183,7 +176,7 @@ footer {
         flex-wrap: nowrap;
         scrollbar-width: thin;
     }
-    nav > a, #trivago a {
+    nav > a{
         min-width: 100px;
         box-sizing: border-box;
         padding: 10px 16px;
@@ -199,23 +192,104 @@ footer {
         display: flex;
         align-items: center;
         justify-content: center;
+
     }
-    #trivago a {
-        background: #000;
-        color: #fff;
-        border: 1px solid #555555;
+   #primeiro_paragrafo{
+    font-size: 1em;
+    padding: 0 3%;
+   }
+
+   
+}
+
+
+/*Outras páginas em html*/
+
+
+.main_outras_paginas{
+    background-color:rgb(196, 197, 197);
+    padding-left: 50px;
+    padding-right:50px ;
+    text-align: center;
+    justify-content: center;
+
+}
+
+.introducao_cidade {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    gap: 32px;
+    background: #fff;
+    border-radius: 16px;
+    padding: 0px;
+    max-width: 1200px;
+    box-sizing: border-box;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.425);
+}
+
+.introducao_cidade_imagem {
+    width: 45%;
+    max-width: 400px;
+    height: auto;
+    object-fit: cover;
+    border-top-left-radius:16px;
+    border-bottom-left-radius:16px;
+    display: block;
+}
+
+.texto {
+    width: 55%;
+    text-align: left;
+    font-size: 1.1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media (max-width: 900px) {
+    .introducao_cidade {
+        flex-direction: column;
+        gap: 16px;
+        padding: 12px;
+        max-width: 98vw;
     }
-    #trivago a:hover {
-        background: #222;
-        color: #fff;
+    .introducao_cidade_imagem,
+    .texto {
+        width: 100%;
+        max-width: 100%;
     }
-    #trivago {
-        /* Remova display: flex e outros estilos que possam quebrar a linha */
-        margin-top: 0;
-        border: none;
-        background: none;
-        padding: 0;
-        display: contents;
-        align-items: unset;
+}
+@media (max-width: 600px) {
+    .introducao_cidade {
+        flex-direction: column;
+        gap: 12px;
+        padding: 0px;
+        max-width: 100vw;
+        box-sizing: border-box;
+        align-items: center;
+        
+    }
+    .introducao_cidade_imagem {
+        width: 100%;
+        max-width: 100vw;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+        border-top-right-radius: 12px;
+        border-top-left-radius: 12px;
+        border-bottom-left-radius:0px;
+    }
+    .texto {
+        width: 100%;
+        max-width: 100vw;
+        text-align: left; /* Alinha o texto à esquerda */
+        font-size: 1em;
+        padding: 0 12px 12px 12px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
     }
 }
