@@ -12,14 +12,17 @@ header {
     margin: 0 auto;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content:space-between;
+    gap:10px;
     flex-wrap: wrap;
     border-bottom: 1px solid #ffffff;
 }
 
-#logo_menu {
-    margin-left: 0;
-}
+/*#logo_menu {
+    max-width: 150px;
+    height: auto;
+    margin-right: 24px;
+}*/
 
 nav {
     display: flex;
@@ -42,31 +45,10 @@ nav a:hover {
     background-color:rgb(187, 183, 183);
     color: #000000;
 }
-
-#trivago {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#trivago a {
-    background-color: #222;
-    border-radius: 20px;
-    color: #fff;
-    padding: 8px 18px;
-    text-decoration: none;
-    border: 1px solid #222;
-}
-
-#trivago a:hover {
-    background-color: #fff;
-    color: #222;
-}
-
-
+ 
 #linha {
-    border-top: 1.5px solid #bbb;
-    margin: 24px 0 0 0;
+    border-top: 1.5px solid #0000008c;
+    margin: 0px 0 0 0;
 }
 
 #primeiro_paragrafo {
@@ -122,7 +104,6 @@ main {
 .pacotes_menu:hover {
     opacity:0.5;
     box-shadow: 0 4px 16px rgba(0,0,0,0.08);
-    /*background-color:rgb(187, 183, 183);*/
 }
 
 .pacotes_menu h1 {
@@ -164,28 +145,66 @@ footer {
 
 @media (max-width: 600px) {
     header {
-       /* flex-direction:column;
-        justify-content:space-between;
-        /*padding: 12px 5px;*/
-        
-
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 10px 10px 10px;
+        /* Removido border-bottom para tirar a linha separadora */
+        border-bottom: none;
     }
-    #logo_menu{  
-        margin: 0 auto;
+    #logo_menu {
+        display: block;
+        margin: 0 auto 18px auto;
+        max-width: 120px;
+        height: auto;
+        align-self: center;
     }
- 
     nav {
-        
-        flex-wrap: wrap;
-       
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 10px;
+        padding-bottom: 8px;
+        overflow-x: auto;
+        flex-wrap: nowrap;
+        scrollbar-width: thin;
+    }
+    nav > a, #trivago a {
+        min-width: 100px;
+        box-sizing: border-box;
+        padding: 10px 16px;
+        border-radius: 20px;
+        border: 1px solid #555;
+        background: #fff;
+        color: #222;
+        font-size: 1em;
+        margin: 0;
+        text-align: center;
+        flex-shrink: 0;
+        transition: background 0.2s, color 0.2s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #trivago a {
+        background: #000;
+        color: #fff;
+        border: 1px solid #555;
+    }
+    #trivago a:hover {
+        background: #222;
+        color: #fff;
     }
     #trivago {
-       
-        margin-top: 8px;
-    }
-    main {
-        width: 98vw;
-        padding: 8px 0;
-        margin: 8px auto;
+        /* Remova display: flex e outros estilos que possam quebrar a linha */
+        margin-top: 0;
+        border: none;
+        background: none;
+        padding: 0;
+        display: contents;
+        align-items: unset;
     }
 }
