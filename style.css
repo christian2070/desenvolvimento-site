@@ -7,7 +7,7 @@ body {
     color: #222;
 }
 header {
-    background-color: #ffffff;
+    background-color: rgb(255, 255, 255);
     padding: 0px 5% 1% 5%;
     margin: 0 auto;
     display: flex;
@@ -17,9 +17,7 @@ header {
     gap:0;
     flex-wrap: wrap;
     border-bottom: 1px solid #eee;
-    /*position: sticky; *
-    top: 0;          
-    z-index: 1000;     */
+      
 }
 
 
@@ -69,6 +67,7 @@ nav > a:hover {
     margin-bottom: 0;
     padding: 0px 0;
     color: #444040;
+    margin-top:5%;
 }
 
 
@@ -246,7 +245,43 @@ footer {
     flex-direction: column;
     justify-content: center;
 }
+.dicas_outras_paginas{
+    border: 2px;
+    border-radius: 16px;
+    width: 270px;
+    min-height: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    background: #ffffff;
+    text-align: center;
+    padding-bottom:3%;
+    cursor: pointer;
+    box-sizing: border-box;
+    transition: box-shadow 0.2s, border-color 0.2s;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.384);
+    
+}
 
+
+.dicas_outras_paginas h1 {
+    font-size: 1.2em;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: #222;
+}
+
+.dicas_outras_paginas p {
+    font-size: 1em;
+    margin: 4px 0;
+    color: #444;
+}
+.imagens_main{
+    border-top-left-radius: 16px;
+}
+    
 @media (max-width: 900px) {
     .introducao_cidade {
         flex-direction: column;
