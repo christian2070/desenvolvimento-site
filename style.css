@@ -257,7 +257,7 @@ footer {
     justify-content: center;
     margin: 0;
     background: #ffffff;
-    text-align: left;
+    text-align: center;
     padding-bottom:3%;
     cursor: pointer;
     box-sizing: border-box;
@@ -283,7 +283,7 @@ footer {
     border-top-left-radius: 16px;
 }
 .dicas_outras_paginas .content {
-    padding: 20px;              
+    padding: 30px;              
     display: flex;
     flex-direction: column;
     gap: 12px;
