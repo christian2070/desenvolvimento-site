@@ -238,6 +238,7 @@ footer {
 }
 
 .texto {
+    padding: 20px;              /* padding coerente com os cartões */
     width: 55%;
     text-align: left;
     font-size: 1.1em;
@@ -256,7 +257,7 @@ footer {
     justify-content: center;
     margin: 0;
     background: #ffffff;
-    text-align: center;
+    text-align: left;
     padding-bottom:3%;
     cursor: pointer;
     box-sizing: border-box;
@@ -281,6 +282,16 @@ footer {
 .imagens_main{
     border-top-left-radius: 16px;
 }
+.dicas_outras_paginas .content {
+    padding: 20px;              
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    flex: 1 1 auto;
+    justify-content: flex-start;
+    text-align: left;
+}
+
     
 @media (max-width: 900px) {
     .introducao_cidade {
@@ -327,4 +338,14 @@ footer {
         justify-content: center;
         align-items: flex-start;
     }
+}
+
+.dicas_outras_paginas .content {
+    padding: 20px;              /* padding uniforme (top/right/bottom/left) */
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    flex: 1 1 auto;
+    justify-content: flex-start;
+    text-align: left;
 }
