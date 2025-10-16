@@ -249,7 +249,7 @@ footer {
 .dicas_outras_paginas{
     border: 2px;
     border-radius: 16px;
-    width: 270px;
+    width: 350px;
     min-height: 160px;
     display: flex;
     flex-direction: column;
