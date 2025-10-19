@@ -8,7 +8,7 @@
   [![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
   [![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
   [![Responsive](https://img.shields.io/badge/Design-Responsive-brightgreen?style=for-the-badge)](https://web.dev/responsive-web-design-basics/)
-  [![Status](https://img.shields.io/badge/Status-Concluído-success?style=for-the-badge)](https://github.com/seu-usuario/turismo-rota-certa)
+  [![Status](https://img.shields.io/badge/Status-Concluído-success?style=for-the-badge)](https://github.com/christian2070/desenvolvimento-site)
 </div>
 
 ---
@@ -24,6 +24,44 @@ O **Turismo Rota Certa** é uma plataforma web moderna e responsiva desenvolvida
 - 📞 **Múltiplos Contatos**: Facilita comunicação direta com a agência
 - 📱 **Design Responsivo**: Experiência otimizada para todos os dispositivos
 - ⚡ **Performance**: Carregamento rápido e navegação fluida
+
+---
+
+## 👥 Equipe de Desenvolvimento
+
+<div align="center">
+
+| 👨‍💻 Desenvolvedor | 🎯 Função | 📱 GitHub |
+|:----------------:|:---------:|:---------:|
+| **Christian Ferreira** | Frontend Developer | [![GitHub](https://img.shields.io/badge/GitHub-100000?style=flat-square&logo=github&logoColor=white)](https://github.com/christian2070) |
+| **Lucca Anthes** | Content Manager | [![GitHub](https://img.shields.io/badge/GitHub-100000?style=flat-square&logo=github&logoColor=white)](https://github.com/luccaoss) |
+| **Gustavo Grana** | Web Developer | [![GitHub](https://img.shields.io/badge/GitHub-100000?style=flat-square&logo=github&logoColor=white)](https://github.com/gustavograna00) |
+
+</div>
+
+### 👥 Divisão de Responsabilidades
+- **Christian Ferreira**: Desenvolvimento das páginas base do projeto e estrutura principal
+- **Gustavo Grana**: Desenvolvimento das páginas base do projeto e implementação de funcionalidades
+- **Lucca Anthes**: Criação e organização do conteúdo, inserção de imagens e informações dos destinos
+
+---
+
+## 🎓 Informações Acadêmicas
+
+**Instituição**: FACENS - Faculdade de Engenharia de Sorocaba  
+**Curso**: Engenharia de Computação  
+**Disciplina**: Web Design  
+**Professor**: Deividson Takatu  
+**Semestre**: 2º Semestre  
+**Ano Letivo**: 2025  
+**Avaliação**: AC2 (Avaliação Continuada 2)
+
+### 🎯 Objetivos do Projeto
+- Aplicar conceitos de HTML5 e CSS3 moderno
+- Implementar design responsivo usando Mobile First
+- Desenvolver uma interface intuitiva e acessível
+- Trabalhar em equipe utilizando metodologias colaborativas
+- Criar um site funcional para uma agência de turismo
 
 ---
 
@@ -77,6 +115,9 @@ O **Turismo Rota Certa** é uma plataforma web moderna e responsiva desenvolvida
 - **Progressive Enhancement** - Melhoria progressiva da experiência
 - **Web Standards** - Conformidade com padrões web
 
+### 🤖 Ferramentas de Desenvolvimento
+- **GitHub Copilot** - Assistência inteligente para organização de código e correção de problemas de responsividade
+
 ---
 
 ## 📂 Estrutura do Projeto
@@ -110,8 +151,8 @@ desenvolvimento-site/
 
 1. **Clone o repositório**
 ```bash
-git clone https://github.com/seu-usuario/turismo-rota-certa.git
-cd turismo-rota-certa/desenvolvimento-site
+git clone https://github.com/christian2070/desenvolvimento-site.git
+cd desenvolvimento-site
 ```
 
 2. **Execução direta**
@@ -205,13 +246,39 @@ H1: 2.5rem | H2: 2rem | H3: 1.5rem | P: 1rem
 
 ---
 
-## 🤝 Contribuindo
+## 🔧 Desafios Técnicos Superados
 
-1. Fork o projeto
-2. Crie uma branch (`git checkout -b feature/nova-feature`)
-3. Commit as mudanças (`git commit -m 'Add: Nova feature'`)
-4. Push para a branch (`git push origin feature/nova-feature`)
-5. Abra um Pull Request
+### 📐 Alinhamento e Arquitetura
+- **Desafio**: Organização e alinhamento adequado das boxes e conteúdos
+- **Solução**: Implementação de Flexbox e CSS Grid para layouts flexíveis e responsivos
+- **Resultado**: Interface harmoniosa e bem estruturada em todos os dispositivos
+
+### 📱 Responsividade
+- **Desafio**: Garantir que o site funcione perfeitamente em diferentes tamanhos de tela
+- **Solução**: Utilização do GitHub Copilot para identificar e corrigir problemas de responsividade
+- **Resultado**: Design totalmente adaptável do mobile ao desktop
+
+### 🎨 Organização de Código
+- **Desafio**: Manter o código CSS organizado e escalável
+- **Solução**: Estruturação de CSS por seções e uso de convenções de nomenclatura
+- **Resultado**: Código limpo, comentado e de fácil manutenção
+
+---
+
+## 🤝 Desenvolvimento em Equipe
+
+### 📝 Metodologia de Trabalho
+1. **Planejamento**: Divisão clara de responsabilidades entre os membros
+2. **Desenvolvimento**: Cada membro focou em suas áreas de expertise
+3. **Integração**: Unificação dos estilos e padrões visuais
+4. **Revisão**: Testes colaborativos em diferentes dispositivos
+5. **Documentação**: Criação de documentação técnica completa
+
+### 🔄 Processo de Colaboração
+- Uso do GitHub para versionamento de código
+- Reuniões regulares para alinhamento do projeto
+- Revisão de código entre os membros da equipe
+- Testes em diferentes navegadores e dispositivos
 
 ---
 
@@ -221,36 +288,28 @@ Este projeto está sob a licença MIT. Veja [LICENSE](LICENSE) para mais detalhe
 
 ---
 
-## 👨‍💻 Autor
-
-**Chris**  
-*Web Developer*
-
-[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/seu-usuario)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/seu-perfil)
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:contato@rotacerta.com.br)
-
----
-
 ## 🙏 Agradecimentos
 
-- 🎓 Faculdade pelo projeto AC2 - Web Design
-- 🎨 Google Fonts pela tipografia
-- 📷 Bancos de imagem pelos assets visuais
-- 🌟 Comunidade dev pela inspiração
+- 🎓 **FACENS** - Faculdade de Engenharia de Sorocaba pelo projeto AC2
+- 👨‍🏫 **Prof. Deividson Takatu** pela orientação na disciplina de Web Design
+- 🎨 **Google Fonts** pela tipografia Golos Text
+- 📷 **Bancos de imagem** pelos assets visuais de qualidade
+- 🤖 **GitHub Copilot** pela assistência no desenvolvimento
+- 🌟 **Comunidade de desenvolvedores** pela inspiração e recursos
 
 ---
 
 <div align="center">
   
-**🚀 Desenvolvido com ❤️ para AC2 - Web Design**
+**🚀 Desenvolvido com ❤️ pelos alunos de Engenharia de Computação da FACENS**
 
 **✈️ Explore o Brasil com a Rota Certa!**
 
-[![AC2](https://img.shields.io/badge/Projeto-AC2-blue)](https://github.com/seu-usuario/turismo-rota-certa)
-[![Web Design](https://img.shields.io/badge/Curso-Web%20Design-green)](https://github.com/seu-usuario/turismo-rota-certa)
+[![AC2](https://img.shields.io/badge/Projeto-AC2-blue)](https://github.com/christian2070/desenvolvimento-site)
+[![Web Design](https://img.shields.io/badge/Disciplina-Web%20Design-green)](https://github.com/christian2070/desenvolvimento-site)
+[![FACENS](https://img.shields.io/badge/Instituição-FACENS-orange)](https://www.facens.br/)
 
-**© 2025 Turismo Rota Certa - Todos os direitos reservados**
+**© 2025 Turismo Rota Certa - Projeto Acadêmico FACENS**
 
 </div>
 
