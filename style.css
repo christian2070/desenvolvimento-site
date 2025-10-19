@@ -1,11 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&display=swap');
 
+/* ===========================================
+   RESET E BASE
+=========================================== */
 body {
     margin: 0;
     background-color: #ffffff;
     font-family: 'Golos Text', Arial, sans-serif;
     color: #222;
 }
+
+/* ===========================================
+   HEADER E NAVEGAÇÃO
+=========================================== */
 header {
     background-color: rgb(255, 255, 255);
     padding: 0px 5% 1% 5%;
@@ -13,16 +20,14 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content:space-between;
-    gap:0;
+    justify-content: space-between;
+    gap: 0;
     flex-wrap: wrap;
     border-bottom: 1px solid #eee;
-      
 }
 
-
 #logo_menu {
-    padding-bottom:1%;
+    padding-bottom: 1%;
 }
 
 nav {
@@ -37,7 +42,6 @@ nav {
 }
 
 nav > a {
-    
     border-radius: 20px;
     color: #222;
     text-align: center;
@@ -57,9 +61,10 @@ nav > a:hover {
     background: #eee;
     color: #000;
 }
- 
 
-
+/* ===========================================
+   CONTEÚDO PRINCIPAL
+=========================================== */
 #primeiro_paragrafo {
     background-color: #ffffff;
     font-size: 1.3em;
@@ -67,9 +72,8 @@ nav > a:hover {
     margin-bottom: 0;
     padding: 0px 0;
     color: #444040;
-    margin-top:5%;
+    margin-top: 5%;
 }
-
 
 main {
     background-color: #ffffff;
@@ -87,10 +91,10 @@ main {
     justify-content: center;
 }
 
-
-
-
-.pacotes_menu{
+/* ===========================================
+   PACOTES E CARTÕES
+=========================================== */
+.pacotes_menu {
     border: 2px;
     border-radius: 16px;
     width: 270px;
@@ -102,17 +106,16 @@ main {
     margin: 0;
     background: #ffffff;
     text-align: center;
-    padding-bottom:3%;
+    padding-bottom: 3%;
     cursor: pointer;
     box-sizing: border-box;
     transition: box-shadow 0.2s, border-color 0.2s;
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.623);
-    
 }
 
 .pacotes_menu:hover {
-    opacity:0.5;
-    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    opacity: 0.5;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
 }
 
 .pacotes_menu h1 {
@@ -127,242 +130,21 @@ main {
     margin: 4px 0;
     color: #444;
 }
-.imagens_main{
+
+.imagens_main {
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
-   
 }
 
-
-#site-footer {
-  background: #f7f7f7;
-  color: #222;
-  padding: 24px 12px;
-  font-size: 0.95rem;
-  box-sizing: border-box;
-  align-items: center;
-  justify-content:center;
-}
-
-#site-footer .container {
-  max-width: 1100px;
-  margin: 0 auto;
-  display: flex;
-  gap: 20px;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-#site-footer .col {
-  flex: 1 1 220px;
-  min-width: 180px;
-}
-
-#site-footer .col img {
-  display: block;
-  margin-bottom: 8px;
-}
-
-#site-footer h4 {
-  margin: 0 0 8px 0;
-  font-size: 1rem;
-}
-
-#site-footer p,
-#site-footer address {
-  margin: 0 0 8px 0;
-  color: #444;
-  line-height: 1.4;
-}
-
-#site-footer a {
-  color: inherit;
-  text-decoration: none;
-}
-#site-footer a:hover {
-  text-decoration: underline;
-}
-
-#site-footer .copyright {
-  max-width: 1100px;
-  margin: 16px auto 0;
-  color: #666;
-  font-size: 0.9rem;
-  text-align: center;
-}
-
-/* Responsivo: empilha colunas em telas pequenas */
-@media (max-width: 700px) {
-  /* empilha e centraliza todo o conteúdo do footer */
-  #site-footer .container {
-    flex-direction: column;
-    align-items: center;   /* centraliza colunas */
-    text-align: center;    /* centraliza textos */
-    gap: 14px;
-    padding: 12px 10px;
-  }
-
-  /* cada coluna ocupa 100% e seu conteúdo fica centralizado */
-  #site-footer .col {
-    min-width: 100%;
-    padding: 8px 12px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  /* centraliza a imagem e limita largura para não estourar */
-  #site-footer .col img {
-    margin: 0 auto 8px;
-    max-width: 120px;
-    width: 60%;
-    height: auto;
-  }
-
-  /* melhora leitura e espaçamento dos textos */
-  #site-footer p,
-  #site-footer address {
-    margin: 6px 0;
-    line-height: 1.45;
-    width: 100%;
-    max-width: 520px;
-  }
-
-  /* transforma os links em blocos fáceis de tocar */
-  #site-footer nav {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
-    align-items: center;
-  }
-  #site-footer nav a {
-    display: inline-block;
-    padding: 8px 0;
-    width: auto;
-  }
-
-  /* copyright centralizado com espaço extra */
-  #site-footer .copyright {
-    text-align: center;
-    margin-top: 12px;
-    padding: 10px 6px;
-  }
-}
-
-/* Ajustes específicos para celulares: reduzir espaçamentos do footer */
-@media (max-width: 700px) {
-  /* reduz espaço entre colunas/itens */
-  #site-footer .container {
-    gap: 8px;
-    padding: 6px 8px;
-  }
-
-  /* menos padding nas colunas */
-  #site-footer .col {
-    padding: 4px 6px;
-  }
-
-  /* títulos e textos mais compactos */
-  #site-footer h4 {
-    margin: 0 0 6px 0;
-    font-size: 1rem;
-  }
-  #site-footer p,
-  #site-footer address {
-    margin: 2px 0;
-    line-height: 1.35;
-    font-size: 0.95rem;
-  }
-
-  /* imagem menor e com menos margem */
-  #site-footer .col img {
-    margin-bottom: 6px;
-    max-width: 90px;
-    width: 48%;
-  }
-
-  /* links com padding reduzido para ocupar menos espaço */
-  #site-footer nav a {
-    padding: 6px 0;
-  }
-
-  /* copyright mais compacta */
-  #site-footer .copyright {
-    margin-top: 8px;
-    padding: 6px 8px;
-    font-size: 0.88rem;
-  }
-}
-
-
-
-@media (max-width: 600px) {
-    header {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 20px 10px 10px 10px;
-        /* Removido border-bottom para tirar a linha separadora */
-        border-bottom: none;
-    }
-    #logo_menu {
-        display: block;
-        margin: 0 auto 18px auto;
-        max-width: 120px;
-        height: auto;
-        align-self: center;
-    }
-    nav {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: center;
-        gap: 10px;
-        margin-bottom: 10px;
-        padding-bottom: 8px;
-        overflow-x: auto;
-        flex-wrap: nowrap;
-        scrollbar-width: thin;
-    }
-    nav > a{
-        min-width: 100px;
-        box-sizing: border-box;
-        padding: 10px 16px;
-        border-radius: 20px;
-        border: 1px solid #555;
-        background: #fff;
-        color: #222;
-        font-size: 1em;
-        margin: 0;
-        text-align: center;
-        flex-shrink: 0;
-        transition: background 0.2s, color 0.2s;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-    }
-   #primeiro_paragrafo{
-    font-size: 1em;
-    padding: 0 3%;
-   }
-
-   
-}
-
-
-/*Outras páginas em html*/
-
-
-.main_outras_paginas{
-    background-color:rgb(196, 197, 197);
+/* ===========================================
+   OUTRAS PÁGINAS
+=========================================== */
+.main_outras_paginas {
+    background-color: rgb(196, 197, 197);
     padding-left: 50px;
-    padding-right:50px ;
+    padding-right: 50px;
     text-align: center;
     justify-content: center;
-
 }
 
 .introducao_cidade {
@@ -383,13 +165,13 @@ main {
     max-width: 400px;
     height: auto;
     object-fit: cover;
-    border-top-left-radius:16px;
-    border-bottom-left-radius:16px;
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
     display: block;
 }
 
 .texto {
-    padding: 20px;              /* padding coerente com os cartões */
+    padding: 20px;
     width: 55%;
     text-align: left;
     font-size: 1.1em;
@@ -397,7 +179,8 @@ main {
     flex-direction: column;
     justify-content: center;
 }
-.dicas_outras_paginas{
+
+.dicas_outras_paginas {
     border: 2px;
     border-radius: 16px;
     width: 350px;
@@ -409,15 +192,12 @@ main {
     margin: 0;
     background: #ffffff;
     text-align: center;
-    padding-bottom:3%;
+    padding-bottom: 3%;
     cursor: pointer;
     box-sizing: border-box;
     transition: box-shadow 0.2s, border-color 0.2s;
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.384);
-    
 }
-
-
 
 .dicas_outras_paginas h1 {
     font-size: 1.2em;
@@ -431,11 +211,9 @@ main {
     margin: 4px 0;
     color: #444;
 }
-.imagens_main{
-    border-top-left-radius: 16px;
-}
+
 .dicas_outras_paginas .content {
-    padding: 30px;              
+    padding: 20px;
     display: flex;
     flex-direction: column;
     gap: 12px;
@@ -444,21 +222,126 @@ main {
     text-align: left;
 }
 
-    
-@media (max-width: 900px) {
-    .introducao_cidade {
-        flex-direction: column;
-        gap: 16px;
-        padding: 12px;
-        max-width: 98vw;
-    }
-    .introducao_cidade_imagem,
-    .texto {
-        width: 100%;
-        max-width: 100%;
-    }
+/* ===========================================
+   FOOTER
+=========================================== */
+#site-footer {
+    background: #dbd5d5;
+    color: #222;
+    padding: 24px 12px;
+    font-size: 0.95rem;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
 }
+
+#site-footer .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#site-footer .col {
+    flex: 1 1 220px;
+    min-width: 180px;
+}
+
+#site-footer .col img {
+    display: block;
+    margin-bottom: 8px;
+}
+
+#site-footer h4 {
+    margin: 0 0 8px 0;
+    font-size: 1rem;
+}
+
+#site-footer p,
+#site-footer address {
+    margin: 0 0 8px 0;
+    color: #444;
+    line-height: 1.4;
+}
+
+#site-footer a {
+    color: inherit;
+    text-decoration: none;
+}
+
+#site-footer a:hover {
+    text-decoration: underline;
+}
+
+#site-footer .copyright {
+    max-width: 1100px;
+    margin: 16px auto 0;
+    color: #666;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+/* ===========================================
+   RESPONSIVIDADE
+=========================================== */
+
+/* Mobile - 600px */
 @media (max-width: 600px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 10px 10px 10px;
+        border-bottom: none;
+    }
+
+    #logo_menu {
+        display: block;
+        margin: 0 auto 18px auto;
+        max-width: 120px;
+        height: auto;
+        align-self: center;
+    }
+
+    nav {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 10px;
+        padding-bottom: 8px;
+        overflow-x: auto;
+        flex-wrap: nowrap;
+        scrollbar-width: thin;
+    }
+
+    nav > a {
+        min-width: 100px;
+        box-sizing: border-box;
+        padding: 10px 16px;
+        border-radius: 20px;
+        border: 1px solid #555;
+        background: #fff;
+        color: #222;
+        font-size: 1em;
+        margin: 0;
+        text-align: center;
+        flex-shrink: 0;
+        transition: background 0.2s, color 0.2s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #primeiro_paragrafo {
+        font-size: 1em;
+        padding: 0 3%;
+    }
+
     .introducao_cidade {
         flex-direction: column;
         gap: 12px;
@@ -466,8 +349,8 @@ main {
         max-width: 100vw;
         box-sizing: border-box;
         align-items: center;
-        
     }
+
     .introducao_cidade_imagem {
         width: 100%;
         max-width: 100vw;
@@ -476,12 +359,13 @@ main {
         margin: 0 auto;
         border-top-right-radius: 12px;
         border-top-left-radius: 12px;
-        border-bottom-left-radius:0px;
+        border-bottom-left-radius: 0px;
     }
+
     .texto {
         width: 100%;
         max-width: 100vw;
-        text-align: left; /* Alinha o texto à esquerda */
+        text-align: left;
         font-size: 1em;
         padding: 0 12px 12px 12px;
         box-sizing: border-box;
@@ -492,13 +376,111 @@ main {
     }
 }
 
-.dicas_outras_paginas .content {
-    padding: 20px;              /* padding uniforme (top/right/bottom/left) */
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    flex: 1 1 auto;
-    justify-content: flex-start;
-    text-align: left;
+/* Footer Responsivo - 700px */
+@media (max-width: 700px) {
+    #site-footer .container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 14px;
+        padding: 12px 10px;
+    }
+
+    #site-footer .col {
+        min-width: 100%;
+        padding: 8px 12px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #site-footer .col img {
+        margin: 0 auto 8px;
+        max-width: 120px;
+        width: 60%;
+        height: auto;
+    }
+
+    #site-footer p,
+    #site-footer address {
+        margin: 6px 0;
+        line-height: 1.45;
+        width: 100%;
+        max-width: 520px;
+    }
+
+    #site-footer nav {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        align-items: center;
+    }
+
+    #site-footer nav a {
+        display: inline-block;
+        padding: 8px 0;
+        width: auto;
+    }
+
+    #site-footer .copyright {
+        text-align: center;
+        margin-top: 12px;
+        padding: 10px 6px;
+    }
+
+    /* Ajustes específicos para celulares */
+    #site-footer .container {
+        gap: 8px;
+        padding: 6px 8px;
+    }
+
+    #site-footer .col {
+        padding: 4px 6px;
+    }
+
+    #site-footer h4 {
+        margin: 0 0 6px 0;
+        font-size: 1rem;
+    }
+
+    #site-footer p,
+    #site-footer address {
+        margin: 2px 0;
+        line-height: 1.35;
+        font-size: 0.95rem;
+    }
+
+    #site-footer .col img {
+        margin-bottom: 6px;
+        max-width: 90px;
+        width: 48%;
+    }
+
+    #site-footer nav a {
+        padding: 6px 0;
+    }
+
+    #site-footer .copyright {
+        margin-top: 8px;
+        padding: 6px 8px;
+        font-size: 0.88rem;
+    }
+}
+
+/* Tablet - 900px */
+@media (max-width: 900px) {
+    .introducao_cidade {
+        flex-direction: column;
+        gap: 16px;
+        padding: 12px;
+        max-width: 98vw;
+    }
+
+    .introducao_cidade_imagem,
+    .texto {
+        width: 100%;
+        max-width: 100%;
+    }
 }
 
